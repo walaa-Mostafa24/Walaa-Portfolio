@@ -1,1724 +1,1129 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Walaa Mostafa | Full Stack Web Developer</title>
 
-
     <!-- Google Font -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
-
-
-    <!-- CSS -->
-
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
+    <!-- ANIMATED STARS BACKGROUND -->
+    <div class="stars">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
 
-<!-- ==================================================
-     ANIMATED STARS BACKGROUND
-=================================================== -->
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+        <div class="loader-circle"></div>
+    </div>
 
-<div class="stars">
-
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-
-</div>
-
-
-<!-- ==================================================
-     LOADER
-=================================================== -->
-
-<div class="loader" id="loader">
-
-    <div class="loader-circle"></div>
-
-</div>
-
-
-<!-- ==================================================
-     NAVBAR
-=================================================== -->
-
-<header class="navbar">
-
-    <a href="#home" class="logo">
-        <span></span>
-    </a>
-
-
-    <nav id="navMenu">
-
-        <a href="#home" class="active">
-            Home
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <span></span>
         </a>
 
-        <a href="#about">
-            About
-        </a>
+        <nav id="navMenu">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-        <a href="#skills">
-            Skills
-        </a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
 
-        <a href="#projects">
-            Projects
-        </a>
+    <!-- HERO -->
+    <section class="hero" id="home">
 
-        <a href="#experience">
-            Experience
-        </a>
+        <div class="hero-content">
 
-        <a href="#certificates">
-            Certificates
-        </a>
-
-        <a href="#contact">
-            Contact
-        </a>
-
-    </nav>
-
-
-    <button
-        class="menu-btn"
-        id="menuBtn"
-        type="button"
-        aria-label="Open menu"
-    >
-
-        <i class="fa-solid fa-bars"></i>
-
-    </button>
-
-</header>
-
-
-<!-- ==================================================
-     HERO
-=================================================== -->
-
-<section class="hero" id="home">
-
-    <div class="hero-content">
-
-
-        <!-- Social Links -->
-
-        <div class="social-links">
-
-            <a
-                href="https://github.com/walaa-Mostafa24"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-            >
-
-                <i class="fa-brands fa-github"></i>
-
-            </a>
-
-
-            <a
-                href="https://www.linkedin.com/in/walaa-mostafa-430b32362"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-            >
-
-                <i class="fa-brands fa-linkedin-in"></i>
-
-            </a>
-
-
-            <a
-                href="mailto:YOUR_EMAIL@gmail.com"
-                aria-label="Email"
-            >
-
-                <i class="fa-solid fa-envelope"></i>
-
-            </a>
-
-        </div>
-
-
-        <!-- Hero Text -->
-
-        <div class="hero-text">
-
-            <p class="hello">
-                Hi, I'm
-            </p>
-
-
-            <h1>
-                Walaa <span>Mostafa</span>
-            </h1>
-
-
-            <!-- Typing Effect -->
-
-            <h2 class="hero-role">
-
-                I'm a
-
-                <span id="typing-text"></span>
-
-                <span class="typing-cursor">
-                    |
-                </span>
-
-            </h2>
-
-
-            <p class="description">
-
-                I build modern, responsive and scalable
-                web applications with clean code,
-                powerful functionality and beautiful
-                user experiences.
-
-            </p>
-
-
-            <!-- Buttons -->
-
-            <div class="hero-buttons">
-
-                <a
-                    href="#projects"
-                    class="primary-btn"
-                >
-
-                    View My Work
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
+            <div class="social-links">
+                <a href="https://github.com/walaa-Mostafa24"
+                   target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
                 </a>
 
-
-                <a
-                    href="#contact"
-                    class="secondary-btn"
-                >
-
-                    Contact Me
-
-                    <i class="fa-regular fa-envelope"></i>
-
+                <a href="https://www.linkedin.com/in/walaa-mostafa-430b32362"
+                   target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </a>
 
+                <a href="mailto:mostafawala71@gmail.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
             </div>
 
-        </div>
+            <div class="hero-text">
+                <p class="hello">Hi, I'm</p>
 
-    </div>
+                <h1>
+                    Walaa <span>Mostafa</span>
+                </h1>
 
+                <h2 class="hero-role">
+                    I'm a
+                    <span id="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </h2>
 
-    <!-- Hero Image -->
-
-    <div class="hero-image">
-
-        <div class="circle-glow"></div>
-
-
-        <div class="image-circle">
-
-            <img
-                src="assets/images/s1.png"
-                alt="Walaa Mostafa"
-            >
-
-        </div>
-
-
-        <div class="code-icon">
-            &lt;/&gt;
-        </div>
-
-
-        <div class="floating-dot dot1"></div>
-
-        <div class="floating-dot dot2"></div>
-
-        <div class="floating-dot dot3"></div>
-
-    </div>
-
-</section>
-
-
-<!-- ==================================================
-     ABOUT
-=================================================== -->
-
-<section
-    class="section about"
-    id="about"
->
-
-    <div class="section-title">
-
-        <p>
-            About Me
-        </p>
-
-        <h2>
-
-            Turning Ideas Into
-
-            <span>
-                Digital Experiences.
-            </span>
-
-        </h2>
-
-    </div>
-
-
-    <div class="about-container">
-
-
-        <div class="about-text">
-
-            <h3>
-
-                I'm a Full Stack Developer
-                who loves turning ideas into
-
-                <span>
-                    real experiences.
-                </span>
-
-            </h3>
-
-
-            <p>
-
-                I build modern, responsive and interactive
-                web applications using frontend and backend
-                technologies.
-
-            </p>
-
-
-            <p>
-
-                I care about clean code, responsive design,
-                performance and creating user-friendly
-                digital experiences.
-
-            </p>
-
-
-            <a
-                href="#contact"
-                class="primary-btn"
-            >
-
-                Let's Work Together
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </a>
-
-        </div>
-
-
-        <!-- Stats -->
-
-        <div class="stats">
-
-
-            <div class="stat-card">
-
-                <i class="fa-solid fa-graduation-cap"></i>
-
-                <h4>
-                    Education
-                </h4>
-
-                <p>
-                    Assiut New Technological University
+                <p class="description">
+                    I build modern, responsive and scalable
+                    web applications with clean code,
+                    powerful functionality and beautiful
+                    user experiences.
                 </p>
 
-                <small>
-                    Information Technology
-                </small>
+                <div class="hero-buttons">
+                    <a href="#projects" class="primary-btn">
+                        View My Work
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
 
+                    <a href="#contact" class="secondary-btn">
+                        Contact Me
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="circle-glow"></div>
+
+            <div class="image-circle">
+                <img src="assets/images/photo.jpg" alt="Walaa Mostafa">
             </div>
 
+            <div class="code-icon">&lt;/&gt;</div>
 
-            <div class="stat-card">
-
-                <i class="fa-solid fa-briefcase"></i>
-
-                <h4>
-                    Experience
-                </h4>
-
-                <p>
-                    Full Stack Developer
-                </p>
-
-                <small>
-                    Freelance | 2025 - Present
-                </small>
-
-            </div>
-
-
-            <div class="stat-card">
-
-                <i class="fa-solid fa-rocket"></i>
-
-                <h4>
-                    Projects
-                </h4>
-
-                <strong>
-                    10+
-                </strong>
-
-                <small>
-                    Projects
-                </small>
-
-            </div>
-
-
-            <div class="stat-card">
-
-                <i class="fa-solid fa-code"></i>
-
-                <h4>
-                    Coding
-                </h4>
-
-                <strong>
-                    8+
-                </strong>
-
-                <small>
-                    Hours Daily
-                </small>
-
-            </div>
-
-
+            <div class="floating-dot dot1"></div>
+            <div class="floating-dot dot2"></div>
+            <div class="floating-dot dot3"></div>
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- ABOUT -->
+    <section class="section about" id="about">
 
-
-<!-- ==================================================
-     SKILLS
-=================================================== -->
-
-<section
-    class="section skills"
-    id="skills"
->
-
-    <div class="section-title">
-
-        <p>
-            Skills & Technologies
-        </p>
-
-        <h2>
-
-            Technologies I
-
-            <span>
-                Work With
-            </span>
-
-        </h2>
-
-    </div>
-
-
-    <div class="skills-container">
-
-
-        <div class="skill-card">
-
-            <i class="fa-brands fa-html5"></i>
-
-            <h3>
-                HTML5
-            </h3>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <i class="fa-brands fa-css3-alt"></i>
-
-            <h3>
-                CSS3
-            </h3>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <i class="fa-brands fa-js"></i>
-
-            <h3>
-                JavaScript
-            </h3>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <i class="fa-brands fa-bootstrap"></i>
-
-            <h3>
-                Bootstrap
-            </h3>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <i class="fa-brands fa-python"></i>
-
-            <h3>
-                Python
-            </h3>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <i class="fa-solid fa-flask"></i>
-
-            <h3>
-                Flask
-            </h3>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <i class="fa-solid fa-database"></i>
-
-            <h3>
-                SQLite
-            </h3>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <i class="fa-brands fa-git-alt"></i>
-
-            <h3>
-                Git
-            </h3>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <i class="fa-brands fa-github"></i>
-
-            <h3>
-                GitHub
-            </h3>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ==================================================
-     PROJECTS
-=================================================== -->
-
-<section
-    class="section projects"
-    id="projects"
->
-
-    <div class="section-heading">
-
-        <div>
-
-            <p>
-                My Projects
-            </p>
+        <div class="section-title">
+            <p>About Me</p>
 
             <h2>
-
-                Some of my
-
-                <span>
-                    recent work
-                </span>
-
+                Turning Ideas Into
+                <span>Digital Experiences.</span>
             </h2>
-
         </div>
 
+        <div class="about-container">
 
-        <a
-            href="projects.html"
-            class="outline-btn"
-        >
-
-            View All Projects
-
-            <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-    </div>
-
-
-    <div class="projects-container">
-
-
-        <!-- Project 1 -->
-
-        <div class="project-card">
-
-            <div class="project-image">
-
-                <img
-                    src="assets/images/s2.png"
-                    alt="SmartHub Electronics E-commerce Website"
-                >
-
-
-                <div class="project-overlay">
-
-                    <a
-                        href="https://walaamostafa24.pythonanywhere.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Live Demo"
-                    >
-
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                    </a>
-
-
-                    <a
-                        href="https://github.com/walaa-Mostafa24/Smart-Hub"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="GitHub"
-                    >
-
-                        <i class="fa-brands fa-github"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="project-info">
-
-                <span>
-                    Full Stack E-Commerce
-                </span>
-
+            <div class="about-text">
                 <h3>
-                    SmartHub
+                    I'm a Full Stack Developer
+                    who loves turning ideas into
+                    <span>real experiences.</span>
                 </h3>
 
                 <p>
-                    Electronics E-commerce Website
+                    I build modern, responsive and interactive
+                    web applications using frontend and backend
+                    technologies.
                 </p>
-
-
-                <div class="tech">
-
-                    <span>
-                        HTML
-                    </span>
-
-                    <span>
-                        CSS
-                    </span>
-
-                    <span>
-                        JavaScript
-                    </span>
-
-                    <span>
-                        Bootstrap
-                    </span>
-
-                    <span>
-                        Flask
-                    </span>
-
-                    <span>
-                        SQLite
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Project 2 -->
-
-        <div class="project-card">
-
-            <div class="project-image">
-
-                <img
-                    src="assets/images/w1.jpg"
-                    alt="Egypt Tourist Places Website"
-                >
-
-
-                <div class="project-overlay">
-
-                    <a
-                        href="https://walaa-mostafa24.github.io/Egypt-Tourist-Places/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Live Demo"
-                    >
-
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                    </a>
-
-
-                    <a
-                        href="https://github.com/walaa-Mostafa24/Egypt-Tourist-Places"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="GitHub"
-                    >
-
-                        <i class="fa-brands fa-github"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="project-info">
-
-                <span>
-                    Tourism Website
-                </span>
-
-                <h3>
-                    Egypt Tourist Places
-                </h3>
 
                 <p>
-                    Responsive Tourism Website
-                    for Exploring Egypt
+                    I care about clean code, responsive design,
+                    performance and creating user-friendly
+                    digital experiences.
                 </p>
 
+                <a href="#contact" class="primary-btn">
+                    Let's Work Together
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
 
-                <div class="tech">
+            <!-- STATS -->
+            <div class="stats">
 
-                    <span>
-                        HTML5
-                    </span>
+                <div class="stat-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h4>Education</h4>
+                    <p>Assiut New Technological University</p>
+                    <small>Information Technology</small>
+                </div>
 
-                    <span>
-                        CSS3
-                    </span>
+                <div class="stat-card">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h4>Experience</h4>
+                    <p>Full Stack Developer</p>
+                    <small>Freelance | 2025 - Present</small>
+                </div>
 
-                    <span>
-                        JavaScript
-                    </span>
+                <div class="stat-card">
+                    <i class="fa-solid fa-rocket"></i>
+                    <h4>Projects</h4>
+                    <strong>10+</strong>
+                    <small>Projects</small>
+                </div>
 
-                    <span>
-                        Responsive Design
-                    </span>
-
+                <div class="stat-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Coding</h4>
+                    <strong>8+</strong>
+                    <small>Hours Daily</small>
                 </div>
 
             </div>
+        </div>
+    </section>
 
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+
+        <div class="section-title">
+            <p>Skills & Technologies</p>
+
+            <h2>
+                Technologies I
+                <span>Work With</span>
+            </h2>
         </div>
 
+        <div class="skills-container">
 
-        <!-- Project 3 -->
-
-        <div class="project-card">
-
-            <div class="project-image">
-
-                <img
-                    src="assets/images/w4.jpg"
-                    alt="Pharmacy and Skincare Website"
-                >
-
-
-                <div class="project-overlay">
-
-                    <a
-                        href="https://walaa-mostafa24.github.io/Pharmacy-Skincare/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Live Demo"
-                    >
-
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                    </a>
-
-
-                    <a
-                        href="https://github.com/walaa-Mostafa24/Pharmacy-Skincare"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="GitHub"
-                    >
-
-                        <i class="fa-brands fa-github"></i>
-
-                    </a>
-
-                </div>
-
+            <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
             </div>
 
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
 
-            <div class="project-info">
+            <div class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
 
-                <span>
-                    Pharmacy & Skincare
-                </span>
+            <div class="skill-card">
+                <i class="fa-brands fa-bootstrap"></i>
+                <h3>Bootstrap</h3>
+            </div>
 
-                <h3>
-                    Pharmacy & Skincare
-                </h3>
+            <div class="skill-card">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+            </div>
 
-                <p>
+            <div class="skill-card">
+                <i class="fa-solid fa-flask"></i>
+                <h3>Flask</h3>
+            </div>
 
-                    Responsive website for pharmacy
-                    and skincare products.
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>SQLite</h3>
+            </div>
 
-                </p>
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt"></i>
+                <h3>Git</h3>
+            </div>
 
+            <div class="skill-card">
+                <i class="fa-brands fa-github"></i>
+                <h3>GitHub</h3>
+            </div>
 
-                <div class="tech">
-
-                    <span>
-                        HTML5
-                    </span>
-
-                    <span>
-                        CSS3
-                    </span>
-
-                    <span>
-                        Bootstrap
-                    </span>
-
-                    <span>
-                        JavaScript
-                    </span>
-
-                </div>
-
+            <div class="skill-card">
+                <i class="fa-brands fa-angular"></i>
+                <h3>Angular</h3>
             </div>
 
         </div>
+    </section>
 
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
 
-    </div>
-
-</section>
-
-
-<!-- ==================================================
-     EXPERIENCE
-=================================================== -->
-
-<section
-    class="section experience"
-    id="experience"
->
-
-    <div class="section-title">
-
-        <p>
-            Experience
-        </p>
-
-        <h2>
-
-            My Professional
-
-            <span>
-                Journey
-            </span>
-
-        </h2>
-
-    </div>
-
-
-    <div class="timeline">
-
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-
-            <div class="timeline-content">
-
-                <span>
-                    2025 - Present
-                </span>
-
-                <h3>
-                    Full Stack Web Developer
-                </h3>
-
-                <h4>
-                    Freelance
-                </h4>
-
-                <p>
-
-                    Building responsive websites
-                    and web applications using modern
-                    frontend and backend technologies.
-
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-
-            <div class="timeline-content">
-
-                <span>
-                    2026
-                </span>
-
-                <h3>
-                    Front-End Web Development Training
-                </h3>
-
-                <h4>
-                    Etisal / NTI
-                </h4>
-
-                <p>
-
-                    Training in web development,
-                    JavaScript, responsive design
-                    and modern development practices.
-
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- ==================================================
-     CERTIFICATES
-=================================================== -->
-
-<section
-    class="section certificates"
-    id="certificates"
->
-
-    <div class="section-title">
-
-        <p>
-            Certificates
-        </p>
-
-        <h2>
-
-            My
-
-            <span>
-                Certifications
-            </span>
-
-        </h2>
-
-    </div>
-
-
-    <div class="certificate-container">
-
-
-        <div class="certificate-card">
-
-            <div class="certificate-icon">
-
-                <i class="fa-solid fa-certificate"></i>
-
-            </div>
-
-
+        <div class="section-heading">
             <div>
-
-                <h3>
-                    Front-End Web Development
-                </h3>
-
-                <p>
-                    Etisal - Assiut
-                </p>
-
-                <small>
-                    Issued: 2026
-                </small>
-
+                <p>My Projects</p>
+                <h2>
+                    Some of my
+                    <span>recent work</span>
+                </h2>
             </div>
 
-        </div>
-
-
-        <div class="certificate-card">
-
-            <div class="certificate-icon">
-
-                <i class="fa-solid fa-code"></i>
-
-            </div>
-
-
-            <div>
-
-                <h3>
-                    Web Development Training
-                </h3>
-
-                <p>
-                    Web Development Program
-                </p>
-
-                <small>
-                    2026
-                </small>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- ==================================================
-     CONTACT
-=================================================== -->
-
-<section
-    class="section contact"
-    id="contact"
->
-
-    <div class="section-title">
-
-        <p>
-            Get In Touch
-        </p>
-
-
-        <h2>
-
-            Let's Build Something
-
-            <span>
-                Amazing Together.
-            </span>
-
-        </h2>
-
-
-        <p class="contact-subtitle">
-
-            Have a project in mind or need a professional
-            website? Feel free to contact me.
-            I'd love to hear about your idea.
-
-        </p>
-
-    </div>
-
-
-    <!-- CTA -->
-
-    <div class="contact-cta">
-
-
-        <div class="cta-icon">
-
-            <i class="fa-solid fa-paper-plane"></i>
-
-        </div>
-
-
-        <div class="cta-text">
-
-            <span>
-                Available for freelance work
-            </span>
-
-            <h3>
-                Have an idea? Let's make it real.
-            </h3>
-
-        </div>
-
-
-        <a
-            href="mailto:YOUR_EMAIL@gmail.com"
-            class="primary-btn"
-        >
-
-            Contact Me
-
-            <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ==================================================
-     FOOTER
-=================================================== -->
-
-<footer class="footer">
-
-
-    <div class="footer-top">
-
-
-        <!-- Brand -->
-
-        <div class="footer-brand">
-
-            <a
-                href="#home"
-                class="footer-logo"
-            >
-
-                Walaa<span>.</span>
-
-            </a>
-
-
-            <p>
-
-                Full Stack Web Developer creating
-                modern, responsive and interactive
-                digital experiences.
-
-            </p>
-
-
-            <div class="footer-social">
-
-
-                <a
-                    href="https://github.com/walaa-Mostafa24"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-
-                    <i class="fa-brands fa-github"></i>
-
-                </a>
-
-
-                <a
-                    href="https://www.linkedin.com/in/walaa-mostafa-430b32362"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-
-                    <i class="fa-brands fa-linkedin-in"></i>
-
-                </a>
-
-
-                <a
-                    href="mailto:YOUR_EMAIL@gmail.com"
-                >
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                </a>
-
-
-            </div>
-
-        </div>
-
-
-        <!-- Links -->
-
-        <div class="footer-links">
-
-            <h3>
-                Quick Links
-            </h3>
-
-
-            <a href="#home">
-                Home
-            </a>
-
-            <a href="#about">
-                About
-            </a>
-
-            <a href="#skills">
-                Skills
-            </a>
-
-            <a href="#projects">
-                Projects
-            </a>
-
-            <a href="#experience">
-                Experience
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
-
-        </div>
-
-
-        <!-- Footer Contact -->
-
-        <div class="footer-contact">
-
-            <h3>
-                Let's Connect
-            </h3>
-
-
-            <p>
-
-                Have a project or an idea?
-                Let's build something amazing together.
-
-            </p>
-
-
-            <a
-                href="#contact"
-                class="footer-btn"
-            >
-
-                Let's Talk
-
+            <a href="projects.html" class="outline-btn">
+                View All Projects
                 <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
 
+        <div class="projects-container">
+
+            <!-- PROJECT 1 -->
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="assets/images/s2.png"
+                         alt="SmartHub Electronics E-commerce Website">
+
+                    <div class="project-overlay">
+                        <a href="https://walaamostafa24.pythonanywhere.com"
+                           target="_blank" rel="noopener noreferrer" title="Live Demo">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <a href="https://github.com/walaa-Mostafa24/Smart-Hub"
+                           target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <span>Full Stack E-Commerce</span>
+                    <h3>SmartHub</h3>
+                    <p>Electronics E-commerce Website</p>
+
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>Flask</span>
+                        <span>SQLite</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="assets/images/w1.jpg"
+                         alt="Egypt Tourist Places Website">
+
+                    <div class="project-overlay">
+                        <a href="https://walaa-mostafa24.github.io/Egypt-Tourist-Places/"
+                           target="_blank" rel="noopener noreferrer" title="Live Demo">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <a href="https://github.com/walaa-Mostafa24/Egypt-Tourist-Places"
+                           target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <span>Tourism Website</span>
+                    <h3>Egypt Tourist Places</h3>
+
+                    <p>
+                        Responsive Tourism Website
+                        for Exploring Egypt
+                    </p>
+
+                    <div class="tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="assets/images/w4.jpg"
+                         alt="Pharmacy and Skincare Website">
+
+                    <div class="project-overlay">
+                        <a href="https://walaa-mostafa24.github.io/Pharmacy-Skincare/"
+                           target="_blank" rel="noopener noreferrer" title="Live Demo">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <a href="https://github.com/walaa-Mostafa24/Pharmacy-Skincare"
+                           target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <span>Pharmacy & Skincare</span>
+                    <h3>Pharmacy & Skincare</h3>
+
+                    <p>
+                        Responsive website for pharmacy
+                        and skincare products.
+                    </p>
+
+                    <div class="tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+
+        <div class="section-title">
+            <p>Experience</p>
+
+            <h2>
+                My Professional
+                <span>Journey</span>
+            </h2>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span>2025 - Present</span>
+                    <h3>Full Stack Web Developer</h3>
+                    <h4>Freelance</h4>
+
+                    <p>
+                        Building responsive websites
+                        and web applications using modern
+                        frontend and backend technologies.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span>2026</span>
+                    <h3>Front-End Web Development Training</h3>
+                    <h4>Etisal / NTI</h4>
+
+                    <p>
+                        Training in web development,
+                        JavaScript, responsive design
+                        and modern development practices.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="section certificates" id="certificates">
+
+        <div class="section-title">
+            <p>Certificates</p>
+
+            <h2>
+                My
+                <span>Certifications</span>
+            </h2>
+        </div>
+
+        <div class="certificate-container">
+
+            <div class="certificate-card">
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+
+                <div>
+                    <h3>Front-End Web Development</h3>
+                    <p>Etisal - Assiut</p>
+                    <small>Issued: 2026</small>
+                </div>
+            </div>
+
+            <div class="certificate-card">
+                <div class="certificate-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div>
+                    <h3>Web Development Training</h3>
+                    <p>Web Development Program</p>
+                    <small>2026</small>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <span class="section-tag">LET'S WORK TOGETHER</span>
+
+                <h2>
+                    Have a Project in Mind?
+                    <span>Let's Make It Happen!</span>
+                </h2>
+
+                <p>
+                    I'm always excited to work on creative ideas and build
+                    amazing digital experiences. Whether you need a website,
+                    web application, or a complete solution, let's talk!
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="mailto:mostafawala71@gmail.com" class="contact-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <small>Email Me</small>
+                            <span>mostafawala71@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/walaa-mostafa-430b32362/"
+                       target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <div>
+                            <small>LinkedIn</small>
+                            <span>Let's connect professionally</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/walaa-Mostafa24"
+                       target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fa-brands fa-github"></i>
+                        <div>
+                            <small>GitHub</small>
+                            <span>Explore my projects</span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    Available for Freelance Projects
+                </div>
+
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div class="contact-form-box">
+
+                <h3>Send Me a Message</h3>
+                <p>Have an idea? Tell me about it.</p>
+
+                <form id="contactForm">
+
+                    <div class="input-row">
+
+                        <div class="input-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name"
+                                   placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="contact-email">Your Email</label>
+                            <input type="email" id="contact-email"
+                                   placeholder="Enter your email" required>
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+                        <label for="contact-subject">Subject</label>
+
+                        <select id="contact-subject" required>
+                            <option value="">Choose a subject</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Frontend Development">Frontend Development</option>
+                            <option value="Backend Development">Backend Development</option>
+                            <option value="Freelance Project">Freelance Project</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="contact-message">Your Message</label>
+
+                        <textarea id="contact-message" rows="5"
+                                  placeholder="Tell me about your project..."
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit" class="send-btn">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                    <small class="form-note">
+                        I'll get back to you as soon as possible.
+                    </small>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <a href="#home" class="footer-logo">
+                    Walaa<span>.</span>
+                </a>
+
+                <p>
+                    Full Stack Web Developer creating
+                    modern, responsive and interactive
+                    digital experiences.
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="https://github.com/walaa-Mostafa24"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/walaa-mostafa-430b32362/"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="mailto:mostafawala71@gmail.com"
+                       aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+            <!-- Footer Contact -->
+            <div class="footer-contact">
+
+                <h3>Let's Connect</h3>
+
+                <p>
+                    Have a project or an idea?
+                    Let's build something amazing together.
+                </p>
+
+                <a href="#contact" class="footer-btn">
+                    Let's Talk
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="current-year"></span> Walaa Mostafa.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Designed & Built with
+                <i class="fa-solid fa-heart"></i>
+                &
+                <i class="fa-solid fa-code"></i>
+            </p>
+
+            <a href="#home" class="back-top" aria-label="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
             </a>
 
         </div>
 
+    </footer>
 
-    </div>
+    <!-- TYPING EFFECT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
 
-
-    <div class="footer-line"></div>
-
-
-    <div class="footer-bottom">
-
-        <p>
-
-            © 2026
-
-            <span>
-                Walaa Mostafa
-            </span>
-
-            . All rights reserved.
-
-        </p>
-
-
-        <p>
-
-            Designed & Built with
-
-            <i class="fa-solid fa-heart"></i>
-
-            &
-
-            <i class="fa-solid fa-code"></i>
-
-        </p>
-
-
-        <a
-            href="#home"
-            class="back-top"
-        >
-
-            <i class="fa-solid fa-arrow-up"></i>
-
-        </a>
-
-    </div>
-
-
-</footer>
-
-
-<!-- ==================================================
-     TYPING EFFECT
-=================================================== -->
-
-<script>
-
-    document.addEventListener(
-        "DOMContentLoaded",
-        function () {
-
-            const typingText =
-                document.getElementById("typing-text");
-
+            const typingText = document.getElementById("typing-text");
 
             if (!typingText) {
                 return;
             }
 
-
             const words = [
-
                 "Full Stack Web Developer",
-
                 "Front-End Developer",
-
                 "Web Developer"
-
             ];
 
-
             let wordIndex = 0;
-
             let charIndex = 0;
-
             let deleting = false;
-
 
             function typingEffect() {
 
-                const currentWord =
-                    words[wordIndex];
-
+                const currentWord = words[wordIndex];
 
                 if (!deleting) {
 
                     typingText.textContent =
-                        currentWord.substring(
-                            0,
-                            charIndex + 1
-                        );
-
+                        currentWord.substring(0, charIndex + 1);
 
                     charIndex++;
 
-
-                    if (
-                        charIndex ===
-                        currentWord.length
-                    ) {
-
+                    if (charIndex === currentWord.length) {
                         deleting = true;
-
-
-                        setTimeout(
-                            typingEffect,
-                            1800
-                        );
-
-
+                        setTimeout(typingEffect, 1800);
                         return;
-
                     }
 
                 } else {
 
                     typingText.textContent =
-                        currentWord.substring(
-                            0,
-                            charIndex - 1
-                        );
-
+                        currentWord.substring(0, charIndex - 1);
 
                     charIndex--;
 
-
                     if (charIndex === 0) {
-
                         deleting = false;
-
-
-                        wordIndex =
-                            (wordIndex + 1)
-                            % words.length;
-
-
-                        setTimeout(
-                            typingEffect,
-                            500
-                        );
-
-
+                        wordIndex = (wordIndex + 1) % words.length;
+                        setTimeout(typingEffect, 500);
                         return;
-
                     }
-
                 }
 
-
-                setTimeout(
-                    typingEffect,
-                    deleting ? 50 : 100
-                );
-
+                setTimeout(typingEffect, deleting ? 50 : 100);
             }
 
-
             typingEffect();
+        });
+    </script>
 
+    <!-- CONTACT FORM -->
+    <script>
+        const contactForm = document.getElementById("contactForm");
+
+        if (contactForm) {
+
+            contactForm.addEventListener("submit", function (e) {
+
+                e.preventDefault();
+
+                const name = document.getElementById("contact-name").value.trim();
+                const email = document.getElementById("contact-email").value.trim();
+                const subject = document.getElementById("contact-subject").value;
+                const message = document.getElementById("contact-message").value.trim();
+
+                const emailSubject = encodeURIComponent(subject);
+
+                const emailBody = encodeURIComponent(
+                    "Name: " + name + "\n" +
+                    "Email: " + email + "\n\n" +
+                    "Message:\n" + message
+                );
+
+                const mailtoLink =
+                    "mailto:mostafawala71@gmail.com" +
+                    "?subject=" + emailSubject +
+                    "&body=" + emailBody;
+
+                window.location.href = mailtoLink;
+            });
         }
 
-    );
+        // Current Year
+        const yearElement = document.getElementById("current-year");
 
-</script>
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+    </script>
 
-
-<!-- ==================================================
-     STARS CSS
-=================================================== -->
-
-<style>
-
-    .stars {
-        position: fixed;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        overflow: hidden;
-        z-index: -1;
-    }
-
-
-    .stars span {
-        position: absolute;
-
-        width: 2px;
-        height: 2px;
-
-        background: #ffffff;
-
-        border-radius: 50%;
-
-        box-shadow:
-            0 0 6px #ffffff,
-            0 0 12px rgba(0, 245, 255, 0.8);
-
-        animation:
-            starTwinkle
-            3s
-            infinite
-            ease-in-out;
-    }
-
-
-    .stars span:nth-child(1) {
-        top: 8%;
-        left: 12%;
-        animation-delay: 0s;
-    }
-
-    .stars span:nth-child(2) {
-        top: 18%;
-        left: 30%;
-        animation-delay: .5s;
-    }
-
-    .stars span:nth-child(3) {
-        top: 12%;
-        left: 72%;
-        animation-delay: 1s;
-    }
-
-    .stars span:nth-child(4) {
-        top: 30%;
-        left: 88%;
-        animation-delay: 1.5s;
-    }
-
-    .stars span:nth-child(5) {
-        top: 42%;
-        left: 18%;
-        animation-delay: 2s;
-    }
-
-    .stars span:nth-child(6) {
-        top: 55%;
-        left: 42%;
-        animation-delay: .8s;
-    }
-
-    .stars span:nth-child(7) {
-        top: 62%;
-        left: 80%;
-        animation-delay: 1.8s;
-    }
-
-    .stars span:nth-child(8) {
-        top: 75%;
-        left: 10%;
-        animation-delay: 2.4s;
-    }
-
-    .stars span:nth-child(9) {
-        top: 82%;
-        left: 35%;
-        animation-delay: 1.2s;
-    }
-
-    .stars span:nth-child(10) {
-        top: 90%;
-        left: 70%;
-        animation-delay: 2.8s;
-    }
-
-    .stars span:nth-child(11) {
-        top: 25%;
-        left: 55%;
-        animation-delay: .3s;
-    }
-
-    .stars span:nth-child(12) {
-        top: 48%;
-        left: 65%;
-        animation-delay: 1.4s;
-    }
-
-    .stars span:nth-child(13) {
-        top: 70%;
-        left: 55%;
-        animation-delay: 2.1s;
-    }
-
-    .stars span:nth-child(14) {
-        top: 35%;
-        left: 5%;
-        animation-delay: .7s;
-    }
-
-    .stars span:nth-child(15) {
-        top: 15%;
-        left: 92%;
-        animation-delay: 2.5s;
-    }
-
-    .stars span:nth-child(16) {
-        top: 68%;
-        left: 25%;
-        animation-delay: 1.6s;
-    }
-
-    .stars span:nth-child(17) {
-        top: 93%;
-        left: 48%;
-        animation-delay: .9s;
-    }
-
-    .stars span:nth-child(18) {
-        top: 50%;
-        left: 95%;
-        animation-delay: 2.2s;
-    }
-
-    .stars span:nth-child(19) {
-        top: 5%;
-        left: 48%;
-        animation-delay: 1.1s;
-    }
-
-    .stars span:nth-child(20) {
-        top: 87%;
-        left: 88%;
-        animation-delay: 2.7s;
-    }
-
-
-    @keyframes starTwinkle {
-
-        0%,
-        100% {
-            opacity: .2;
-            transform: scale(.7);
+    <!-- STARS AND TYPING CSS -->
+    <style>
+        .stars {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
         }
 
-        50% {
-            opacity: 1;
-            transform: scale(1.5);
+        .stars span {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #ffffff;
+            border-radius: 50%;
+            box-shadow:
+                0 0 6px #ffffff,
+                0 0 12px rgba(0, 245, 255, 0.8);
+            animation: starTwinkle 3s infinite ease-in-out;
         }
 
-    }
+        .stars span:nth-child(1) { top: 8%; left: 12%; animation-delay: 0s; }
+        .stars span:nth-child(2) { top: 18%; left: 30%; animation-delay: .5s; }
+        .stars span:nth-child(3) { top: 12%; left: 72%; animation-delay: 1s; }
+        .stars span:nth-child(4) { top: 30%; left: 88%; animation-delay: 1.5s; }
+        .stars span:nth-child(5) { top: 42%; left: 18%; animation-delay: 2s; }
+        .stars span:nth-child(6) { top: 55%; left: 42%; animation-delay: .8s; }
+        .stars span:nth-child(7) { top: 62%; left: 80%; animation-delay: 1.8s; }
+        .stars span:nth-child(8) { top: 75%; left: 10%; animation-delay: 2.4s; }
+        .stars span:nth-child(9) { top: 82%; left: 35%; animation-delay: 1.2s; }
+        .stars span:nth-child(10) { top: 90%; left: 70%; animation-delay: 2.8s; }
+        .stars span:nth-child(11) { top: 25%; left: 55%; animation-delay: .3s; }
+        .stars span:nth-child(12) { top: 48%; left: 65%; animation-delay: 1.4s; }
+        .stars span:nth-child(13) { top: 70%; left: 55%; animation-delay: 2.1s; }
+        .stars span:nth-child(14) { top: 35%; left: 5%; animation-delay: .7s; }
+        .stars span:nth-child(15) { top: 15%; left: 92%; animation-delay: 2.5s; }
+        .stars span:nth-child(16) { top: 68%; left: 25%; animation-delay: 1.6s; }
+        .stars span:nth-child(17) { top: 93%; left: 48%; animation-delay: .9s; }
+        .stars span:nth-child(18) { top: 50%; left: 95%; animation-delay: 2.2s; }
+        .stars span:nth-child(19) { top: 5%; left: 48%; animation-delay: 1.1s; }
+        .stars span:nth-child(20) { top: 87%; left: 88%; animation-delay: 2.7s; }
 
+        @keyframes starTwinkle {
+            0%, 100% {
+                opacity: .2;
+                transform: scale(.7);
+            }
 
-    /* Typing */
-
-    #typing-text {
-
-        color: #00f5ff;
-
-        text-shadow:
-            0 0 8px #00f5ff,
-            0 0 18px rgba(0, 245, 255, .7),
-            0 0 35px rgba(0, 245, 255, .4);
-
-    }
-
-
-    .typing-cursor {
-
-        color: #00f5ff;
-
-        animation:
-            cursorBlink
-            .7s
-            infinite;
-
-    }
-
-
-    @keyframes cursorBlink {
-
-        0%,
-        50% {
-            opacity: 1;
+            50% {
+                opacity: 1;
+                transform: scale(1.5);
+            }
         }
 
-        51%,
-        100% {
-            opacity: 0;
+        #typing-text {
+            color: #00f5ff;
+            text-shadow:
+                0 0 8px #00f5ff,
+                0 0 18px rgba(0, 245, 255, .7),
+                0 0 35px rgba(0, 245, 255, .4);
         }
 
-    }
+        .typing-cursor {
+            color: #00f5ff;
+            animation: cursorBlink .7s infinite;
+        }
 
-</style>
+        @keyframes cursorBlink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
 
+        /* CONTACT SECTION */
+        .contact-section {
+            padding: 100px 8%;
+            position: relative;
+        }
 
-<!-- Main JavaScript -->
+        .contact-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
 
-<script src="script.js"></script>
+        .contact-info .section-tag {
+            display: inline-block;
+            color: #00f5ff;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
 
+        .contact-info h2 {
+            font-size: 38px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2 span {
+            display: block;
+            color: #00f5ff;
+        }
+
+        .contact-info > p {
+            color: #aaa;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 16px;
+            border: 1px solid rgba(0, 245, 255, .15);
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            transition: .3s;
+        }
+
+        .contact-link:hover {
+            border-color: #00f5ff;
+            transform: translateX(7px);
+            background: rgba(0, 245, 255, .05);
+        }
+
+        .contact-link > i {
+            color: #00f5ff;
+            font-size: 22px;
+            width: 30px;
+            text-align: center;
+        }
+
+        .contact-link div {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .contact-link small {
+            color: #aaa;
+        }
+
+        .contact-link span {
+            font-size: 14px;
+            overflow-wrap: anywhere;
+        }
+
+        .availability {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 25px;
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        .status-dot {
+            width: 9px;
+            height: 9px;
+            background: #00e676;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #00e676;
+        }
+
+        .contact-form-box {
+            padding: 35px;
+            border: 1px solid rgba(0, 245, 255, .2);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, .04);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 0 30px rgba(0, 245, 255, .05);
+        }
+
+        .contact-form-box h3 {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .contact-form-box > p {
+            color: #aaa;
+            margin-bottom: 25px;
+        }
+
+        .input-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            margin-bottom: 18px;
+        }
+
+        .input-group label {
+            color: #ddd;
+            font-size: 14px;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: 9px;
+            outline: none;
+            background: rgba(255, 255, 255, .05);
+            color: white;
+            font-family: inherit;
+            font-size: 14px;
+            transition: .3s;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus,
+        .input-group textarea:focus {
+            border-color: #00f5ff;
+            box-shadow: 0 0 10px rgba(0, 245, 255, .12);
+        }
+
+        .input-group input::placeholder,
+        .input-group textarea::placeholder {
+            color: #888;
+        }
+
+        .input-group select option {
+            background: #151525;
+            color: white;
+        }
+
+        .input-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .send-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 9px;
+            background: #00ddeb;
+            color: #080818;
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .send-btn:hover {
+            background: #00f5ff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0, 245, 255, .25);
+        }
+
+        .send-btn i {
+            margin-left: 8px;
+        }
+
+        .form-note {
+            display: block;
+            color: #999;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 850px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .contact-info h2 {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .contact-section {
+                padding: 70px 5%;
+            }
+
+            .contact-form-box {
+                padding: 22px;
+            }
+
+            .input-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .contact-info h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+
+    <!-- EXISTING MAIN JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
-
 </html>
